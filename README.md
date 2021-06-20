@@ -1,6 +1,6 @@
 # ResolverFrameworksTest
 
-This following project repository demonstrates using Resolver across frameworks and in the main application.
+This project repository demonstrates using Resolver across frameworks and in the main application.
 
 Functionally, the main trick is to place Resolver into its own, dedicated framework that's imported into the main application and into each individual framework. 
 
