@@ -15,10 +15,16 @@ extension Resolver {
     }
 }
 
+public protocol PresentationViewModelDelegate {
+    func test()
+}
+
 public class PresentationViewModel: ObservableObject {
+    @Injected public var delegate: PresentationViewModelDelegate
     @Published public var myText: String
     public init() {
         myText = "ID = \(UUID())"
+        delegate.test()
     }
 }
 

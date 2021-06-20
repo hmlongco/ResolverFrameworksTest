@@ -11,7 +11,11 @@ import PresentationFramework
 
 extension Resolver: ResolverRegistering {
     public static func registerAllServices() {
+        registerAppServices()
         registerPresentationServices()
+    }
+    public static func registerAppServices() {
+        register { MyPresentationViewModelDelegate() as PresentationViewModelDelegate }
     }
 }
 

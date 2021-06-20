@@ -9,6 +9,12 @@ import SwiftUI
 import ResolverFramework
 import PresentationFramework
 
+class MyPresentationViewModelDelegate: PresentationViewModelDelegate {
+    func test() {
+        print("test")
+    }
+}
+
 struct ContentView: View {
     @InjectedObject var viewModel: PresentationViewModel
     var body: some View {
